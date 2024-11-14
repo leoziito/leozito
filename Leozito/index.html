@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leozito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Leozito</h1>
+        <nav>
+            <ul>
+                <li><a href="#filmes">Filmes</a></li>
+                <li><a href="#series">Séries</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search" placeholder="Pesquisar filmes ou séries...">
+    </header>
+    
+    <main>
+        <section id="generos">
+            <h2>Gêneros</h2>
+            <div class="genres">
+                <button onclick="filterGenre('Comédia')">Comédia</button>
+                <button onclick="filterGenre('Terror')">Terror</button>
+                <button onclick="filterGenre('Drama')">Drama</button>
+                <button onclick="filterGenre('Ação')">Ação</button>
+                <!-- Adicione mais botões de gênero -->
+            </div>
+        </section>
+
+        <section id="filmes">
+            <h2>Filmes Populares</h2>
+            <div class="grid" id="filmes-grid">
+                <!-- Cards de filmes dinâmicos -->
+            </div>
+        </section>
+
+        <section id="series">
+            <h2>Séries Populares</h2>
+            <div class="grid" id="series-grid">
+                <!-- Cards de séries dinâmicos -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Leozito Filmes e Séries</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<div class="card">
+  <img src="caminho/para/filme.jpg" alt="Título do Filme">
+  <h3>Título do Filme</h3>
+  <p>Gênero: Comédia</p>
+  <div class="rating">
+    <span data-rating="1">★</span>
+    <span data-rating="2">★</span>
+    <span data-rating="3">★</span>
+    <span data-rating="4">★</span>
+    <span data-rating="5">★</span>
+  </div>
+</div>
+<section id="destaques">
+  <h2>Destaques</h2>
+  <div class="grid" id="destaques-grid">
+    <!-- Cards de destaques (preenchidos dinamicamente) -->
+  </div>
+</section>
+
+<section id="lancamentos">
+  <h2>Lançamentos</h2>
+  <div class="grid" id="lancamentos-grid">
+    <!-- Cards de lançamentos recentes (preenchidos dinamicamente) -->
+  </div>
+</section>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+    <img id="modal-image" src="" alt="">
+    <div id="modal-recommendations">
+      <h4>Recomendações</h4>
+    </div>
+  </div>
+</div>
+<button onclick="toggleTheme()">Alternar Tema</button>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaVhEpSL2n5LzpMW0X3tEXD1KqR8TaHfFz9F481oi4qqVStxOO237LgK8yPmYCkfhexDdFCsFXsOl2wPr9WneZPToRMMn8f-XjaFSypgXa6_LKfRWDDWW9XPJNAtxf7f3QfdbHTWnPi_y1SOah5P7Cc2qYh1eJrJiNk-nYgNfTYqUjtE0VHw2T4dWDDx7E/s1600/IMG_3618.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" data-original-height="1438" data-original-width="984" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaVhEpSL2n5LzpMW0X3tEXD1KqR8TaHfFz9F481oi4qqVStxOO237LgK8yPmYCkfhexDdFCsFXsOl2wPr9WneZPToRMMn8f-XjaFSypgXa6_LKfRWDDWW9XPJNAtxf7f3QfdbHTWnPi_y1SOah5P7Cc2qYh1eJrJiNk-nYgNfTYqUjtE0VHw2T4dWDDx7E/s1600/IMG_3618.jpeg" /></a></div><iframe
+src="https://drive.google.com/file/d/1O4sYEK1ADDR3bH0npW-RfNUWkfr51-0Q/preview" width="640" height="480" allow="autoplay"></iframe>
